@@ -1,0 +1,20 @@
+runtime: php74
+
+env_variables:
+  ## Put production environment variables here.
+  APP_SERVICES_CACHE: /tmp/services.php
+  APP_PACKAGES_CACHE: /tmp/packages.php
+  APP_CONFIG_CACHE: /tmp/config.php
+  APP_ROUTES_CACHE: /tmp/routes.php
+  APP_KEY: base64:N+2Au3mRYM98dFFWt+fWw3tYVt6UpTFy7fY3cnhpG50=
+  APP_STORAGE: /tmp
+  VIEW_COMPILED_PATH: /tmp
+  CACHE_DRIVER: database
+  SESSION_DRIVER: database
+  ## Set these environment variables according to your CloudSQL configuration.
+  DB_DATABASE: lasqua
+  DB_USERNAME: test
+  DB_PASSWORD: test
+  ## for MYSQL, use DB_SOCKET:
+  DB_SOCKET: "/cloudsql/lasqua-back:europe-west1:lasquaback"
+  FIREBASE_CREDENTIALS: firebase_credentials.json
